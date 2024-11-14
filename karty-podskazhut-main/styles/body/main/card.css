@@ -1,0 +1,30 @@
+.content__card {
+    aspect-ratio: 3/4;
+    margin-top: 7%;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__card-subtitle {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.colored-text {
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.colored-text::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    height: 0.25em;
+    width: 101%;
+    background-color: var(--accent-color);
+    z-index: -1;
+}
